@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dym-ecofiti.github.io/dymecofiti/sitemap.xml
