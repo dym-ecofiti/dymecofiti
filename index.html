@@ -1168,6 +1168,36 @@ font-size:1.45rem;
 }
 
 }
+/* ===========================================
+   PHILOSOPHY TAG
+=========================================== */
+
+.philosophy-tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.philosophy-tag::before,
+.philosophy-tag::after{
+    content: "";
+    width: 70px;
+    height: 2px;
+    background: var(--green);
+    opacity: 0.6;
+}
+
+.philosophy-title{
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 35px;
+}
+
+.philosophy-title em{
+    color: var(--green);
+}
 </style>
  
  <script type="application/ld+json">
@@ -1523,12 +1553,13 @@ Every assignment follows a structured, collaborative and evidence-based process 
 
     <div class="container">
 
-        <div class="section-tag fade-up">
+        <div class="section-tag fade-up philosophy-tag"">
             OUR PHILOSOPHY
         </div>
 
-        <h2 class="section-title fade-up">
-            Our Commitment to a <em>Sustainable Future</em> 
+        <h2 class="section-title fade-up philosophy-title">
+            Our Commitment to a<br>
+    <em>Sustainable Future</em> 
         </h2>
 
         <p class="section-intro fade-up">
