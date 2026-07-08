@@ -172,23 +172,25 @@
     pointer-events: none;
   }
   .hero-orb-1 {
-    width: 600px; height: 600px;
-    right: -100px; top: -100px;
-    background: radial-gradient(circle, rgba(45,122,79,0.2) 0%, transparent 70%);
-    animation: orbFloat 8s ease-in-out infinite;
+  width:600px;
+    height:600px;
+    ...
   }
   .hero-orb-2 {
-    width: 400px; height: 400px;
-    right: 200px; bottom: -50px;
-    background: radial-gradient(circle, rgba(30,96,128,0.15) 0%, transparent 70%);
-    animation: orbFloat 10s ease-in-out infinite reverse;
+   width:400px;
+    height:400px;
+    ...
   }
   .hero-orb-3 {
-    width: 200px; height: 200px;
-    left: 10%; top: 20%;
-    background: radial-gradient(circle, rgba(61,170,110,0.08) 0%, transparent 70%);
-    animation: orbFloat 6s ease-in-out infinite;
-  }
+    width:200px;
+    height:200px;
+    ...
+ } 
+ .hero-orb-1,
+.hero-orb-2,
+.hero-orb-3{
+    display:none;
+}
   @keyframes orbFloat {
     0%, 100% { transform: translateY(0) scale(1); }
     50% { transform: translateY(-30px) scale(1.05); }
