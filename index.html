@@ -1444,6 +1444,223 @@ font-size:3.4rem;
 }
 
 }
+/* ==========================================
+LANDING HERO V2
+========================================== */
+
+.landing-hero{
+
+position:relative;
+
+height:100vh;
+
+background-image:
+
+linear-gradient(
+
+rgba(7,41,28,.78),
+
+rgba(7,41,28,.45)
+
+),
+
+url("images/hero-landscape.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+overflow:hidden;
+
+}
+
+.landing-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+rgba(15,93,58,.35),
+
+rgba(23,55,94,.20)
+
+);
+
+}
+
+.landing-inner{
+
+position:relative;
+
+z-index:2;
+
+max-width:1280px;
+
+margin:auto;
+
+padding:0 7%;
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:90px;
+
+align-items:center;
+
+}
+
+.landing-left{
+
+color:white;
+
+}
+
+.landing-badge{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:14px;
+
+padding:12px 22px;
+
+background:rgba(255,255,255,.10);
+
+backdrop-filter:blur(12px);
+
+border-radius:50px;
+
+margin-bottom:40px;
+
+}
+
+.landing-badge img{
+
+height:38px;
+
+}
+
+.landing-badge span{
+
+font-size:.9rem;
+
+letter-spacing:.12em;
+
+text-transform:uppercase;
+
+}
+
+.landing-left h1{
+
+font-size:5rem;
+
+line-height:1.05;
+
+font-weight:700;
+
+margin-bottom:35px;
+
+}
+
+.landing-left h1 span{
+
+color:#A7E163;
+
+}
+
+.landing-left p{
+
+font-size:1.2rem;
+
+line-height:1.8;
+
+max-width:640px;
+
+}
+
+.landing-right{
+
+display:flex;
+
+flex-direction:column;
+
+gap:24px;
+
+align-items:flex-end;
+
+}
+
+.hero-stat{
+
+width:250px;
+
+padding:35px;
+
+background:rgba(23,55,94,.55);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:22px;
+
+backdrop-filter:blur(18px);
+
+}
+
+.hero-stat h2{
+
+font-size:3rem;
+
+color:white;
+
+margin-bottom:8px;
+
+}
+
+.hero-stat small{
+
+font-size:1rem;
+
+color:#E7F0EC;
+
+line-height:1.6;
+
+}
+
+@media(max-width:900px){
+
+.landing-inner{
+
+grid-template-columns:1fr;
+
+}
+
+.landing-right{
+
+align-items:flex-start;
+
+margin-top:40px;
+
+}
+
+.landing-left h1{
+
+font-size:3.2rem;
+
+}
+
+}
 </style>
  
  <script type="application/ld+json">
@@ -1504,95 +1721,71 @@ font-size:3.4rem;
 
     <div class="landing-overlay"></div>
 
-    <div class="container landing-container">
-
-        <!-- LEFT -->
+    <div class="landing-inner">
 
         <div class="landing-left">
 
             <div class="landing-badge">
 
-                <img src="logo-icon-256.png" alt="DYM Ecofiti">
+                <img src="images/logo.png" alt="DYM Ecofiti Logo">
 
                 <span>
                     Environmental & Sustainability Advisory
-                    • Nairobi, Kenya
                 </span>
 
             </div>
 
-            <h1 class="landing-title">
+            <h1>
 
-                The landscapes<br>
-                we protect.
-
-                <br><br>
-
-                The communities<br>
-                we serve.
+                The landscapes
+                <br>
+                <span>we protect.</span>
 
                 <br><br>
 
-                The future<br>
-                we help build.
+                The communities and
+                <br>
+                <span>organizations we empower</span>
+
+                <br><br>
+
+                The future
+                <br>
+                <span>we help build.</span>
 
             </h1>
 
-            <p class="landing-text">
+            <p>
 
-                DYM Ecofiti Consulting Ltd delivers science-driven
-                environmental, climate resilience, water resources,
-                ESG and sustainability solutions for governments,
-                development partners, NGOs and responsible businesses
-                across Africa.
+                DYM Ecofiti Consulting partners with governments, development partners, businesses and communities to deliver science-driven environmental, climate resilience, water resources and sustainability solutions that create lasting impact.
 
             </p>
 
-            <div class="landing-scroll">
-
-                SCROLL
-
-            </div>
-
         </div>
-
-        <!-- RIGHT -->
 
         <div class="landing-right">
 
-            <div class="landing-card">
+            <div class="hero-stat">
 
                 <h2>15+</h2>
 
-                <p>
-
-                    Projects Delivered
-
-                </p>
+                <small>Projects Delivered</small>
 
             </div>
 
-            <div class="landing-card">
+            <div class="hero-stat">
 
                 <h2>4</h2>
 
-                <p>
-
-                    Service Disciplines
-
-                </p>
+                <small>Core Service Areas</small>
 
             </div>
 
-            <div class="landing-card">
+            <div class="hero-stat">
 
-                <h2>Nairobi</h2>
+                <h2>Kenya</h2>
 
-                <p>
-
-                    Kenya Based
-
-                </p>
+                <small>Based • Serving Africa and beyond</small>
 
             </div>
 
