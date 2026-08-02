@@ -402,6 +402,73 @@
   .pillar-text strong { display: block; font-weight: 600; color: var(--text-dark); margin-bottom: 0.2rem; font-size: 0.92rem; }
   .pillar-text p { font-size: 0.83rem; color: var(--text-muted); line-height: 1.5; }
 
+ /* ABOUT GRID */
+ .about-grid{
+
+display:grid;
+
+grid-template-columns:1.1fr 0.9fr;
+
+gap:70px;
+
+align-items:center;
+
+margin-bottom:90px;
+
+}
+
+ .about-image{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    max-width:520px;
+
+    display:block;
+
+    border-radius:24px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.18);
+
+    transition:.4s ease;
+
+}
+
+.about-image img:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 35px 80px rgba(0,0,0,.25);
+
+}
+
+@media(max-width:992px){
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+    }
+
+    .about-image{
+
+        order:-1;
+
+  }
+
+}
+ 
   /* ── SERVICES ── */
   .services {
     background: var(--green-deep);
@@ -1485,80 +1552,86 @@ font-size:1.45rem;
 
 <!-- ABOUT -->
 <section class="about" id="about">
-  <div class="about-visual fade-up">
- </div>
-  <div class="about-content fade-up">
-    <div class="section-tag">Who We Are</div>
-   <h2 class="section-title">
-    Building a <em>More Sustainable</em><br>
-    Future Together
-   </h2>
-  <p class="about-desc">
 
-DYM Ecofiti Consulting Ltd is a Kenyan environmental and sustainability consultancy partnering with governments, development partners, businesses and communities to transform environmental challenges into opportunities for resilient and sustainable development.
+    <div class="about-grid">
 
-<br><br>
+        <!-- LEFT COLUMN -->
+        <div class="about-content fade-up">
 
-We believe that lasting impact is achieved through collaboration. By combining scientific expertise, local knowledge and practical implementation experience, we develop solutions that protect natural resources, strengthen climate resilience and improve the wellbeing of people and ecosystems.
+            <div class="section-tag">
+                WHO WE ARE
+            </div>
 
-<br><br>
+            <h2 class="section-title">
+                Building a <em>More Sustainable</em><br>
+                Future Together
+            </h2>
 
-Whether supporting environmental compliance, guiding ESG strategies, strengthening water resources management or designing climate-resilient programmes, our approach is grounded in evidence, driven by innovation and focused on creating measurable, long-term value for our partners.
+            <p class="about-desc">
 
-</p>
-    <div class="about-pillars">
-      <div class="pillar-item">
-        <div class="pillar-icon">🌍</div>
-        <div class="pillar-text">
-          <strong>Our Mission</strong>
-          <p>To advance sustainable development by delivering innovative, evidence-based environmental, climate, ESG and project management solutions that protect natural resources, strengthen community resilience and create long-term value for our clients and society.</p>
+                DYM Ecofiti Consulting Ltd is a Kenyan environmental and sustainability consultancy partnering with governments, development partners, businesses and communities to transform environmental challenges into opportunities for resilient and sustainable development.
+
+                <br><br>
+
+                We believe that lasting impact is achieved through collaboration. By combining scientific expertise, local knowledge and practical implementation experience, we develop solutions that protect natural resources, strengthen climate resilience and improve the wellbeing of people and ecosystems.
+
+                <br><br>
+
+                Whether supporting environmental compliance, guiding ESG strategies, strengthening water resources management or designing climate-resilient programmes, our approach is grounded in evidence, driven by innovation and focused on creating measurable, long-term value for our partners.
+
+            </p>
+
         </div>
-      </div>
-      <div class="pillar-item">
-        <div class="pillar-icon">🔬</div>
-        <div class="pillar-text">
-          <strong>Our Vision</strong>
-          <p>To be a trusted leader in environmental, climate and ESG advisory, recognized for delivering transformative solutions that inspire resilient communities, sustainable businesses and responsible development across Kenya and the wider African region.</p>
+
+        <!-- RIGHT COLUMN -->
+
+        <div class="about-image fade-up">
+
+            <img src="images/about-team.jpg"
+                 alt="DYM Ecofiti Team">
+
         </div>
-      </div>
-      <div class="pillar-item">
-        <div class="pillar-icon">🤝</div>
-        <div class="pillar-text">
-          <strong>Our Clients</strong>
-          <p>We proudly partner with national and county governments, development partners, international NGOs, UN agencies, USG agencies, private sector organizations, financial institutions, community-based organizations and local communities to deliver sustainable, high-impact solutions that address environmental, climate and development challenges.</p>
-        </div>
-       
-   <div class="about-impact">
-
-    <h3>Our Areas of Impact</h3>
-
-    <p class="impact-intro">
-        We work alongside our partners across six interconnected areas where we create measurable environmental, social and economic value.
-    </p>
-
-    <div class="impact-grid">
-
-        <div class="impact-item">✓ Environmental & Sustainability Advisory</div>
-
-        <div class="impact-item">✓ Climate Change & Resilience</div>
-
-        <div class="impact-item">✓ Water Resources Management</div>
-
-        <div class="impact-item">✓ ESG & Corporate Sustainability</div>
-
-        <div class="impact-item">✓ Research & Programme Development</div>
-
-        <div class="impact-item">✓ Community Capacity Strengthening</div>
 
     </div>
 
-    <a href="#services" class="about-btn">
-        Learn More About Us →
-    </a>
+    <!-- IMPACT -->
 
-</div>
+    <div class="about-impact">
+
+        <h3>Our Areas of Impact</h3>
+
+        <p class="impact-intro">
+
+            We work alongside our partners across six interconnected areas where we create measurable environmental, social and economic value.
+
+        </p>
+
+        <div class="impact-grid">
+
+            <div class="impact-item">🌱 Environmental & Sustainability Advisory</div>
+
+            <div class="impact-item">🌍 Climate Change & Resilience</div>
+
+            <div class="impact-item">💧 Water Resources Management</div>
+
+            <div class="impact-item">♻ ESG & Corporate Sustainability</div>
+
+            <div class="impact-item">📊 Research & Programme Development</div>
+
+            <div class="impact-item">🤝 Community Capacity Strengthening</div>
+
+        </div>
+
+        <a href="#services" class="about-btn">
+
+            Learn More About Us →
+
+        </a>
+
+    </div>
+
 </section>
-
+ 
 <!-- SERVICES -->
 <section class="services" id="services">
   <div class="services-bg"></div>
