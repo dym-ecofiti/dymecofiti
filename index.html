@@ -166,36 +166,6 @@
       repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(61,170,110,0.03) 60px, rgba(61,170,110,0.03) 61px);
   }
 
-  .hero-orb {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-  }
-  .hero-orb-1 {
-  width:600px;
-    height:600px;
-    ...
-  }
-  .hero-orb-2 {
-   width:400px;
-    height:400px;
-    ...
-  }
-  .hero-orb-3 {
-    width:200px;
-    height:200px;
-    ...
- } 
- .hero-orb-1,
-.hero-orb-2,
-.hero-orb-3{
-    display:none;
-}
-  @keyframes orbFloat {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-30px) scale(1.05); }
-  }
-
   .hero-content {
     position: relative; z-index: 2;
     max-width: 680px;
@@ -1208,11 +1178,13 @@ font-size:1.45rem;
 
 .landing-hero{
     position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100vh;
+    width: 100%;
     overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background:
         linear-gradient(
@@ -1511,7 +1483,7 @@ font-size:1.45rem;
 
 <section class="landing-hero">
 
-    <div class="landing-overlay"></div>
+  <div class="landing-overlay"></div>
 
   <div class="landing-inner">
 
@@ -1526,12 +1498,8 @@ font-size:1.45rem;
 
 <!-- HERO -->
 <section class="hero" id="home">
- <div class="hero-bg-pattern"></div>
- <div class="hero-orb hero-orb-1"></div>
- <div class="hero-orb hero-orb-2"></div>
- <div class="hero-orb hero-orb-3"></div>
- 
-  <div class="hero-content">
+ <div class="hero-bg-pattern"></div> 
+ <div class="hero-content">
     <div class="hero-badge">Trusted Environmental, Climate & ESG Advisory Partner | Nairobi, Kenya</div>
     <h1 class="hero-title">
       Driving <em>Sustainable</em><br/>Development Through Science, Strategy & Innovation
